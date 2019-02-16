@@ -29,6 +29,10 @@
 				<div class="site-branding">
 				<img src='<?php echo $logo_url?>'>
 				</div><!-- .site-branding -->
+				<!-- <div class="site-branding">
+					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				</div> -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>

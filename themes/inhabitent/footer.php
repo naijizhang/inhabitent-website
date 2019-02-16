@@ -13,9 +13,11 @@
 				<div class="site-info">
 					<div>
 						<h3>Contact Info</h3>
-						<p>info@inhabitent.com</p>
-						<p>778-456-7891</p>
-						<p></p>
+						<p><i class="fas fa-envelope-square"></i>info@inhabitent.com</p>
+						<p><i class="fas fa-phone"></i>778-456-7891</p>
+						<p><i class="fab fa-facebook-square"></i>
+						<i class="fab fa-twitter-square"></i>
+						<i class="fab fa-google-plus-square"></i></p>
 					</div>
 					<div>
 						<h3>Business Hour</h3>
