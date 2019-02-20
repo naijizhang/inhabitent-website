@@ -14,11 +14,9 @@
 		<?php endif; ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<div class="entry-meta">
-			<?php inhabitent_posted_on(); ?> / <?php inhabitent_comment_count(); ?> / <?php inhabitent_posted_by(); ?>
-		</div><!-- .entry-meta -->
+		
 	</header><!-- .entry-header -->
+	<span><?php echo CFS()->get('product_price'); ?></span>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
