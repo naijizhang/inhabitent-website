@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages.
  *
@@ -10,12 +11,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
-
+		<?php $journal_posts= inhabitent_get_latest_posts();?>
+		<?php foreach($journal_posts as $post):setup_postdata($post);?>
+		<?php get_template_part( 'template-parts/content' ); //display content to test ?>
+		<?php endforeach; wp_reset_postdata(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
