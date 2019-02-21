@@ -798,3 +798,31 @@ footer {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.product-types-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  .product-types-container .product-type-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 250px;
+    border: 5px solid red; }
+    .product-types-container .product-type-item .product-type-logo {
+      width: 50px; }
+    .product-types-container .product-type-item button {
+      width: 50%; }

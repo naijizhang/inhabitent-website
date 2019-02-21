@@ -4,6 +4,23 @@
 
 /* Front page */
 
-
-
-
+//product types
+.product-types-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .product-type-item{
+     display: flex;   
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    border: 5px solid red;
+    
+     .product-type-logo{
+         width: 50px;
+     }
+     button{
+         width: 50%;
+     }
+    }
+}

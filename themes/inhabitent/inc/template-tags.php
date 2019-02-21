@@ -207,8 +207,10 @@ function inhabitent_get_latest_posts()
 	$args = array('post_type' => 'post', 'posts_per_page' => 3, 'order'=>'DESC');
 	$latest_posts = get_posts($args);
 	return $latest_posts;
-	// foreach( $latest_posts as $post){
-	// 	setup_postdata( $post );
-	// }
-	// wp_reset_postdata();
+}
+
+//get the path of product type logo 
+function inhabitent_get_product_type_logo($name)
+{
+	return get_template_directory_uri() . '/assets/images/product-type-icons/'.$name ;
 }
