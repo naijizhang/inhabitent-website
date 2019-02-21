@@ -1,6 +1,7 @@
 // Structure
 
 $base__space-unit: 1.5rem;
+$website-width:1120px;
 
 // Colors
 
@@ -21,8 +22,15 @@ $color__link-hover: midnightblue;
 
 // Typography
 
-$font__main: sans-serif;
+$font__main:  sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+$base-font-size:16px;
+$base-font-colour:#404040;
+$line-height: 1.75;
+$font-family-main: "Merriweather";
+$font-family-accent: "Novovento Sans Web";
+
