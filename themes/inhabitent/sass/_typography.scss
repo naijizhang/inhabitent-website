@@ -66,3 +66,8 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+
+body{
+	min-width:$website-width;
+	width: $website-width;
+}
