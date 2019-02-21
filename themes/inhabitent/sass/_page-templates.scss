@@ -3,6 +3,18 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+//header large logo
+.logo-container{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .frontsite-header-logo{
+        width:275px;
+    }
+}
 
 //product types
 .product-types-container{
@@ -39,7 +51,14 @@
 
         }
         .entry-content{
-            
+
         }
     }
+}
+
+
+/*about page */
+.hero-picture-header{
+    width: 100vw;
+    height: 100vh;
 }

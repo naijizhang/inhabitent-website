@@ -23,17 +23,10 @@
 
 			<header id="masthead" class="site-header" role="banner">
 			
-			<?php $logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent-white.svg';
-		$logo_large_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-full.svg';
-		$header_background_url = get_template_directory_uri() . '/assets/images/home-hero.jpg' ?>
-				<style>
-					header{
-						background-image:  url(<?php echo $header_background_url;?>);
-						background-repeat: no-repeat;
- 						background-size: cover;
-					}
-				</style>
+			<?php $logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent-white.svg'; ?>
+				
 				<div class="container">
+					
 				<img class="site-logo" src='<?php echo $logo_url ?>'>
 				
 
@@ -45,7 +38,6 @@
 
 				</div>
 				
-				<img class="logo-large" src='<?php echo $logo_large_url ?>'>
 				
 			</header><!-- #masthead -->
 

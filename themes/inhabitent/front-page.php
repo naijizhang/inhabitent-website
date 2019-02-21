@@ -7,9 +7,18 @@
  */
 
 get_header(); ?>
-
+<?php $logo_large_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-full.svg';?>
+<div class="logo-container">
+<img class="frontsite-header-logo" src='<?php echo $logo_large_url ?>'>
+</div>
+	<?php if (have_posts()) : while (have_posts()) : the_post();
+	the_content();
+	endwhile;
+	else : ?>
+	<p>Sorry, no posts matched your criteria.</p>
+	<?php endif; ?>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="front-site-main" role="main">
 
 		<!-- show product types -->
 		<?php $product_types = get_terms('product_type', array(

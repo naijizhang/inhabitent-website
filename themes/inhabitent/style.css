@@ -397,7 +397,7 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
-header {
+.site-header {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -440,6 +440,11 @@ header {
 .logo-large {
   height: 30vh;
   margin: 35vh auto; }
+
+.hero-image-header {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -808,6 +813,22 @@ footer {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.logo-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .logo-container .frontsite-header-logo {
+    width: 275px; }
+
 .product-types-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -836,3 +857,8 @@ footer {
       width: 50px; }
     .product-types-container .product-type-item button {
       width: 50%; }
+
+/*about page */
+.hero-picture-header {
+  width: 100vw;
+  height: 100vh; }
