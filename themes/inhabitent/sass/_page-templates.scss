@@ -4,58 +4,6 @@
 
 /* Front page */
 
-//header
-header{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container{
-    position: absolute;
-    top: 0px;
-    display: flex; 
-    flex-flow: row nowrap;
-    width: 100vw;
-    height: 60px;
-    justify-content: space-between;
-    align-items: center;
-    background: red;
-    .site-logo{
-        width: 50px;
-    }
-    nav{
-        display: flex;
-        justify-content: flex-end;
-    }
-}
-.logo-large{
-    height: 30vh;
-    margin: 35vh auto; 
-}
 
 
-//footer
-footer{
-    display: flex;
-    width: 100%;
-    .footer-contact-info{
-        display: inline-flex;
-        flex-flow: column nowrap;
-        width: 25%;
-    }
-    .footer-business-hour{
-        display: inline-flex;
-        flex-flow: column nowrap;
-        width: 25%;
-    }
-    .footer-logo{
-        display: inline-flex;
-        width: 50%;
-        display: flex;
-        justify-content: flex-end;
-        img{
-            width: 200px;
-        }
-    }
-}
+
