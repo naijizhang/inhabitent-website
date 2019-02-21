@@ -40,9 +40,12 @@
 
 //latest posts
 .latest-journal{
+    display: flex;
+    flex-direction: row;
+
     article{
         img{
-
+            width: 80%;
         }
         .entry-title{
 

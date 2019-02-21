@@ -437,10 +437,6 @@ table {
         -ms-flex-pack: end;
             justify-content: flex-end; }
 
-.logo-large {
-  height: 30vh;
-  margin: 35vh auto; }
-
 .hero-image-header {
   width: 100vw;
   height: 100vh;
@@ -857,6 +853,17 @@ footer {
       width: 50px; }
     .product-types-container .product-type-item button {
       width: 50%; }
+
+.latest-journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .latest-journal article img {
+    width: 80%; }
 
 /*about page */
 .hero-picture-header {

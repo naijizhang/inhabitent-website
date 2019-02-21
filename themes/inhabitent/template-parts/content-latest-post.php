@@ -22,7 +22,7 @@
 		<?php endif; ?>
 </div><!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-content -->
+	<div class="entry-button">
+		<button>READ ENTRY</button>
+	</div><!-- .entry-button -->
 </article><!-- #post-## -->
