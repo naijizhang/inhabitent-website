@@ -32,7 +32,8 @@ get_header(); ?>
 
 
 		<!-- show the latest 3 posts -->
-		<div>
+		<h1 class="heading-journal">INHABITENT JOURNAL</h1>
+		<div class="latest-journal">
 		<?php $journal_posts = inhabitent_get_latest_posts(); ?>
 		<?php foreach ($journal_posts as $post) : setup_postdata($post); ?>
 		<?php get_template_part('template-parts/content-latest-post'); //display content to test ?>
