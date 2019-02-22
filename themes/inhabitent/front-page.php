@@ -34,7 +34,7 @@ get_header(); ?>
 				<p>
 					<?php echo $product_type->description ?>
 				</p>
-				<button> <?php echo $product_type->name ?> Stuff   </button>
+				<button onclick="<?php echo get_term_link($product_type); ?>"> <?php echo $product_type->name ?> Stuff   </button>
 			</div>
 			<?php endforeach ?>
 		</div>
