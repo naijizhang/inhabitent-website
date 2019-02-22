@@ -26,7 +26,8 @@
 			<?php $logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent-white.svg'; ?>
 				
 				<div class="container">
-				<a href="<?php echo get_home_url(); ?>">
+				
+				<a class="logo-link" href="<?php echo get_home_url(); ?>">
 					<img class="site-logo" src='<?php echo $logo_url ?>'>
 				
 				</a>	
