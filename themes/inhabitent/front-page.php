@@ -49,6 +49,9 @@ get_header(); ?>
 		<?php endforeach;
 	wp_reset_postdata(); ?>
 		</div>
+		
+		<!-- show the latest 4 advantures in grid -->
+		<h1 class="heading-adventure">LATEST ADVENTURES</h1>
 	
 
 		

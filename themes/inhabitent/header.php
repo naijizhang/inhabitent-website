@@ -26,14 +26,15 @@
 			<?php $logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent-white.svg'; ?>
 				
 				<div class="container">
-					
-				<img class="site-logo" src='<?php echo $logo_url ?>'>
+				<a href="<?php echo get_home_url(); ?>">
+					<img class="site-logo" src='<?php echo $logo_url ?>'>
 				
-
+				</a>	
+				
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
-					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-					<?php get_search_form();?>
+					<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+					<?php get_search_form(); ?>
 				</nav><!-- #site-navigation -->
 
 				</div>
