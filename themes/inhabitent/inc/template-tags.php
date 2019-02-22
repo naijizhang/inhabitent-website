@@ -214,3 +214,18 @@ function inhabitent_get_product_type_logo($name)
 {
 	return get_template_directory_uri() . '/assets/images/product-type-icons/'.$name ;
 }
+
+
+function inhabitent_posts_on_page( $query ) {
+	if ( is_admin() || ! $query->is_main_query() ){
+		return;
+	}
+	
+    if ( is_post_type_archive( 'product' )||is_tax('product_type') ) {
+		$query->set('orderby','title');
+		$query->set( 'posts_per_page', 16 );
+		$query->set( 'order','ASC');
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'inhabitent_posts_on_page', 1 );

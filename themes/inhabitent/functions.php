@@ -102,20 +102,3 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Custom functions that act independently of the theme templates.
  */
-require get_template_directory() . '/inc/extras.php';
-
-
-// add_action('pre_get_posts','shop_filter');
-
-//  function shop_filter_cat($query) {
-//     if (is_post_type_archive( 'product' ) && $query->is_main_query()) {
-//        $query->set('tax_query', array(
-//                     array ('taxonomy' => 'product_cat',
-//                                        'field' => 'slug',
-//                                         'terms' => 'type-1'
-//                                  )
-//                      )
-//        );   
-//     }
-//  }
-

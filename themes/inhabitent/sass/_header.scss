@@ -17,13 +17,49 @@
     .logo-link{
         width:50px;
         height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
     .site-logo{
         width: 50px;
     }
     nav{
+        width: 70vw;
         display: flex;
         justify-content: flex-end;
+    }
+}
+
+.menu-menu-1-container{
+    display: flex;
+    align-items: center;
+    a{
+        margin-right: 20px;
+    }
+   
+}
+
+//search field
+fieldset{
+    height:$line-height;
+    border: none;
+    
+    align-items: center;
+    flex-direction: row;
+    label{
+        width: 100px;
+    }
+    input, textarea {
+       color: #f0e4d1;
+       border: none;
+       background: none;
+       &focus{
+           background-color: none;
+       }
+    }
+    button{
+        background: none;
     }
 }
 
