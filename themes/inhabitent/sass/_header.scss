@@ -1,70 +1,89 @@
 //header
-.site-header{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.site-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container{
-    position: absolute;
-    top: 0px;
-    display: flex; 
-    flex-flow: row nowrap;
-    width: 100vw;
-    height: 60px;
-    justify-content: space-between;
+.container {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100vw;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  .logo-link {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    .logo-link{
-        width:50px;
-        height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .site-logo{
-        width: 50px;
-    }
-    nav{
-        width: 70vw;
-        display: flex;
-        justify-content: flex-end;
-    }
+  }
+  .site-logo {
+    width: 50px;
+  }
+  nav {
+    width: 70vw;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
-.menu-menu-1-container{
-    display: flex;
-    align-items: center;
-    a{
-        margin-right: 20px;
-    }
-   
+.menu-menu-1-container {
+  display: flex;
+  align-items: center;
+  a {
+    margin-right: 20px;
+  }
 }
 
 //search field
-fieldset{
-    height:$line-height;
+fieldset {
+  height: 25px;
+  border: none;
+  display: block;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  
+
+  label {
+    width: 100px;
+    line-height: 1;
+  }
+
+  label {
+    color: #f0e4d1;
+  }
+//   input[type='text'] {
+//     transition: width 0.4s ease-in-out;
+//   }
+
+//   input[type='text']:focus {
+//     width: 200px;
+   
+//   }
+  input,
+  select,
+  textarea {
+    color: #f0e4d1;
     border: none;
-    
-    align-items: center;
-    flex-direction: row;
-    label{
-        width: 100px;
+    background: none;
+    &:focus {
+      background-color: none;
+      border: none;
     }
-    input, textarea {
-       color: #f0e4d1;
-       border: none;
-       background: none;
-       &focus{
-           background-color: none;
-       }
-    }
-    button{
-        background: none;
-    }
+  }
+  
+  button {
+    background: none;
+  }
 }
 
-.hero-image-header{
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
+.hero-image-header {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
 }

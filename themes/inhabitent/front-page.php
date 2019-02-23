@@ -26,7 +26,7 @@ get_header(); ?>
 		'orderby' => 'name',
 		'order' => 'ASC'
 	)); ?>
-	<h1 class="heading-show-stuff">SHOP STUFF</h1>
+	<h2 class="heading-show-stuff">SHOP STUFF</h2>
 		<div class="product-types-container">
 			<?php foreach ($product_types as $product_type) : ?>
 			<div class="product-type-item">
@@ -41,7 +41,7 @@ get_header(); ?>
 
 
 		<!-- show the latest 3 posts -->
-		<h1 class="heading-journal">INHABITENT JOURNAL</h1>
+		<h2 class="heading-journal">INHABITENT JOURNAL</h2>
 		<div class="latest-journal">
 		<?php $journal_posts = inhabitent_get_latest_posts(); ?>
 		<?php foreach ($journal_posts as $post) : setup_postdata($post); ?>

@@ -15,10 +15,16 @@ textarea {
 
 /* Headings */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,button {
 	clear: both;
+	font-family: $font-family-accent;
+	font-weight: 400;
+	text-align: center;
 }
-
+h2{
+	font-size: 2.4rem;
+	margin: 70px auto;
+}
 /* Copy */
 
 p {
