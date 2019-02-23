@@ -209,6 +209,14 @@ function inhabitent_get_latest_posts()
 	return $latest_posts;
 }
 
+//display the all the adventures
+function inhabitent_get_adventures()
+{
+	$args = array('post_type' => 'adventure', 'posts_per_page' => 4, 'order'=>'DESC');
+	$adventures = get_posts($args);
+	return $adventures;
+}
+
 //get the path of product type logo 
 function inhabitent_get_product_type_logo($name)
 {

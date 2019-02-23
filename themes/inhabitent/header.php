@@ -28,7 +28,7 @@
 				<div class="container">
 				
 				<a class="logo-link" href="<?php echo get_home_url(); ?>">
-					<img class="site-logo" src='<?php echo $logo_url ?>'>
+					<img class="site-logo" alt="home logo" src='<?php echo $logo_url ?>'>
 				
 				</a>	
 				

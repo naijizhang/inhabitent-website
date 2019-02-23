@@ -1,13 +1,13 @@
 <?php
 /**
- * Template part for displaying latest posts.
+ * Template part for displaying adventures.
  *
  * @package Inhabitent_Theme
  */
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="adventure-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
@@ -25,7 +25,8 @@
 </div><!-- .entry-header -->
 
 	<div class="entry-button">
-		<input type="button" value="READ ENTRY" class="homebutton" id="go-to-post" 
+		<input type="button" value="READ MORE" class="homebutton" id="go-to-post" 
 onClick="document.location.href='<?php echo esc_url( get_permalink())?>'" />
 	</div><!-- .entry-button -->
 </article><!-- #post-## -->
+

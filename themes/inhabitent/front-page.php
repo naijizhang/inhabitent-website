@@ -34,7 +34,9 @@ get_header(); ?>
 				<p>
 					<?php echo $product_type->description ?>
 				</p>
-				<button onclick="<?php echo get_term_link($product_type); ?>"> <?php echo $product_type->name ?> Stuff   </button>
+				<input type="button" value="<?php echo $product_type->name ?> Stuff" class="homebutton" id="go-to-post" 
+onClick="document.location.href='<?php echo esc_url( get_term_link($product_type))?>'" />
+			
 			</div>
 			<?php endforeach ?>
 		</div>
@@ -45,18 +47,29 @@ get_header(); ?>
 		<div class="latest-journal">
 		<?php $journal_posts = inhabitent_get_latest_posts(); ?>
 		<?php foreach ($journal_posts as $post) : setup_postdata($post); ?>
-		<?php get_template_part('template-parts/content-latest-post'); //display content to test ?>
+		<?php get_template_part('template-parts/content-latest-post'); ?>
 		<?php endforeach;
-	wp_reset_postdata(); ?>
+		wp_reset_postdata(); ?>
 		</div>
 		
 		<!-- show the latest 4 advantures in grid -->
-		<h1 class="heading-adventure">LATEST ADVENTURES</h1>
-	
+		<h2 class="heading-adventure">LATEST ADVENTURES</h2>
+		<div class="latest-adventure">
+		<?php $adventures= inhabitent_get_adventures();?>
+		<?php foreach($adventures as $post): setup_postdata($post);?>
+		<?php 
+			// the_post_thumbnail('medium_large');
+			// the_title();
+			get_template_part('template-parts/content-adventure');
+		?>
+		<?php endforeach; wp_reset_postdata(); ?>
+		</div>
+		<div class="entry-button">
+		<input type="button" value="More Adventures" class="homebutton" id="go-to-post" 
+onClick="document.location.href='<?php echo esc_url( get_post_type_archive_link( 'adventure' ))?>'" />
 
-		
+	</div><!-- .entry-button -->
+	
 	</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

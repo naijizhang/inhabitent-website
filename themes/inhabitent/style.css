@@ -885,7 +885,7 @@ footer {
       margin: 10px; }
     .product-types-container .product-type-item p {
       margin: 5px 15px; }
-    .product-types-container .product-type-item button {
+    .product-types-container .product-type-item input {
       margin: 20px auto;
       background: #248A83;
       color: white;
@@ -897,7 +897,7 @@ footer {
       padding: 12px 25px;
       font-weight: 100;
       text-transform: uppercase; }
-      .product-types-container .product-type-item button:hover {
+      .product-types-container .product-type-item input:hover {
         background: #195c58; }
 
 .latest-journal {

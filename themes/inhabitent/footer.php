@@ -32,7 +32,10 @@
 				
 			</footer><!-- #colophon -->
 		
-
+			<!-- copyright -->
+			<div class="copyright">
+				<p>COPYRIGHT &copy; 2019 INHABITENT</p>
+			</div>
 		<?php wp_footer(); ?>
 
 	</body>
