@@ -21,12 +21,12 @@
 .product-types-container{
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     .product-type-item{
      display: flex;   
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 23.5%;
     border: 2px solid $color_light_grey;
     border-top: 5px solid $color_light_grey;
     &:hover{
@@ -63,15 +63,21 @@
 .latest-journal{
     display: flex;
     flex-direction: row;
-
+    justify-content: space-between;
     article{
+        width: 32%;
         img{
-            width: 80%;
+            width: 100%;
         }
         .entry-title{
+           
+                margin: 5px;
+        
             a{
                 color: $color_green;
-                
+                font-size: 1.2rem;
+                margin: 0px;
+                text-transform: uppercase;
             }
            
         }

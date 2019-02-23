@@ -860,9 +860,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   .product-types-container .product-type-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -874,7 +874,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 250px;
+    width: 23.5%;
     border: 2px solid #a1a1a1;
     border-top: 5px solid #a1a1a1; }
     .product-types-container .product-type-item:hover {
@@ -907,11 +907,21 @@ footer {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
-  .latest-journal article img {
-    width: 80%; }
-  .latest-journal article .entry-title a {
-    color: #248A83; }
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .latest-journal article {
+    width: 32%; }
+    .latest-journal article img {
+      width: 100%; }
+    .latest-journal article .entry-title {
+      margin: 5px; }
+      .latest-journal article .entry-title a {
+        color: #248A83;
+        font-size: 1.2rem;
+        margin: 0px;
+        text-transform: uppercase; }
 
 /*about page */
 .hero-picture-header {
