@@ -82,8 +82,31 @@ fieldset {
   }
 }
 
+
 .hero-image-header {
   width: 100vw;
   height: 100vh;
   background-size: cover;
 }
+.search-container{
+  display:flex;
+  flex-flow: row nowrap;
+}
+.main-navigation{
+  transition: all 1s ease-in-out;
+}
+
+
+
+// input::-webkit-input-placeholder,
+// textarea::-webkit-input-placeholder {
+//  transition: all 0.3s ease-in-out;
+// }
+
+// input:focus::-webkit-input-placeholder,
+// textarea:focus::-webkit-input-placeholder{ 
+ 
+//  transform: translateX(-20px);
+//  visibility: visible !important;
+//  position: absolute;
+// }
