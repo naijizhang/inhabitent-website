@@ -450,6 +450,8 @@ table {
             justify-content: flex-start; }
   .container .site-logo {
     width: 50px; }
+    .container .site-logo:hover {
+      color: #f0e4d1; }
   .container nav {
     font-family: "Novecento Sans Web";
     text-transform: uppercase;
@@ -935,7 +937,8 @@ footer {
       font-size: 15px;
       padding: 12px 25px;
       font-weight: 100;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: "Novecento Sans Web"; }
       .product-types-container .product-type-item input:hover {
         background: #195c58; }
 
@@ -953,14 +956,53 @@ footer {
   .latest-journal article {
     width: 32%; }
     .latest-journal article img {
-      width: 100%; }
+      width: 100%;
+      height: 250px;
+      display: block; }
+    .latest-journal article .entry-meta {
+      padding: 15px;
+      padding-bottom: 0px;
+      font-size: 12px;
+      line-height: 1.2;
+      border-left: 2px solid #a1a1a1;
+      border-right: 2px solid #a1a1a1;
+      border-top: 5px solid #a1a1a1; }
     .latest-journal article .entry-title {
-      margin: 5px; }
+      border-left: 2px solid #a1a1a1;
+      border-right: 2px solid #a1a1a1;
+      padding: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 0px;
+      line-height: 1.2;
+      text-align: start; }
       .latest-journal article .entry-title a {
         color: #248A83;
-        font-size: 1.2rem;
+        font-size: 22px;
+        font-weight: bold;
         margin: 0px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        text-decoration: none; }
+    .latest-journal article .entry-button {
+      border: 2px solid #a1a1a1;
+      border-top: none; }
+    .latest-journal article input {
+      margin: 15px auto;
+      color: black;
+      border: 1px solid black;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-radius: 0px;
+      font-size: 15px;
+      padding: 12px 25px;
+      font-weight: 100;
+      text-transform: uppercase;
+      font-family: "Novecento Sans Web";
+      margin-left: 15px; }
+      .latest-journal article input:hover {
+        background: #248A83;
+        color: white;
+        border: 1px solid white; }
 
 /*about page */
 .hero-picture-header {

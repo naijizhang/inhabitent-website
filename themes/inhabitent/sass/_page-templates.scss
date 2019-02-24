@@ -4,104 +4,137 @@
 
 /* Front page */
 //header large logo
-.logo-container{
-    position: absolute;
-    width:100%;
-    top: 25%;
-    height:50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .frontsite-header-logo{
-        width:275px;
-    }
+.logo-container {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .frontsite-header-logo {
+    width: 275px;
+  }
 }
 
 //product types
-.product-types-container{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .product-type-item{
-     display: flex;   
+.product-types-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .product-type-item {
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 23.5%;
     border: 2px solid $color_light_grey;
     border-top: 5px solid $color_light_grey;
-    &:hover{
-    border: 2px solid $color_orange;
-    border-top: 5px solid $color_orange;
+    &:hover {
+      border: 2px solid $color_orange;
+      border-top: 5px solid $color_orange;
     }
-     .product-type-logo{
-         width: 70px;
-         margin: 10px;
-     }
-     p{
-         margin: 5px 15px;
-     }
-     input{
-         margin: 20px auto;
-         background: $color_green;
-         color: white;
-         border: none;
-         box-shadow:none;
-         border-radius: 0px;
-         font-size: 15px;
-         padding: 12px 25px;
-         font-weight: 100;
-         text-transform: uppercase;
-        &:hover{
-            background:$color_dark_green ;
-        }
-     }
+    .product-type-logo {
+      width: 70px;
+      margin: 10px;
     }
+    p {
+      margin: 5px 15px;
+    }
+    input {
+      margin: 20px auto;
+      background: $color_green;
+      color: white;
+      border: none;
+      box-shadow: none;
+      border-radius: 0px;
+      font-size: 15px;
+      padding: 12px 25px;
+      font-weight: 100;
+      text-transform: uppercase;
+      font-family: $font-family-accent;
+      &:hover {
+        background: $color_dark_green;
+      }
+    }
+  }
 }
-
 
 //latest posts
-.latest-journal{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    article{
-        width: 32%;
-        img{
-            width: 100%;
-        }
-        .entry-title{
-           
-                margin: 5px;
-        
-            a{
-                color: $color_green;
-                font-size: 1.2rem;
-                margin: 0px;
-                text-transform: uppercase;
-            }
-           
-        }
-        .entry-meta{
-
-        }
-        .entry-content{
-
-        }
+.latest-journal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  article {
+    width: 32%;
+    img {
+      width: 100%;
+      height: 250px;
+      display: block;
     }
-}
+    .entry-meta {
+      padding: 15px;
+      padding-bottom: 0px;
+      font-size: 12px;
+      line-height: 1.2;
+      border-left: 2px solid $color_light_grey;
+      border-right: 2px solid $color_light_grey;
+      border-top: 5px solid $color_light_grey;
+    }
+    .entry-title {
+      border-left: 2px solid $color_light_grey;
+      border-right: 2px solid $color_light_grey;
+      padding: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
 
+      margin: 0px;
+      line-height: 1.2;
+      text-align: start;
+      a {
+        color: $color_green;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+    .entry-button {
+      border: 2px solid $color_light_grey;
+      border-top: none;
+    }
+    input {
+      margin: 15px auto;
+      
+      color: black;
+      border: 1px solid black;
+      box-shadow: none;
+      border-radius: 0px;
+      font-size: 15px;
+      padding: 12px 25px;
+      font-weight: 100;
+      text-transform: uppercase;
+      font-family: $font-family-accent;
+      margin-left: 15px;
+      &:hover {
+        background: $color_green;
+        color: white;
+        border: 1px solid white;
+      }
+    }
+  }
+}
 
 /*about page */
-.hero-picture-header{
-    width: 100vw;
-    height: 100vh;
+.hero-picture-header {
+  width: 100vw;
+  height: 100vh;
 }
-
 
 /*product page*/
 .product-menu {
-    margin-top: 60px;
-    a{
+  margin-top: 60px;
+  a {
     color: red;
-    }
+  }
 }

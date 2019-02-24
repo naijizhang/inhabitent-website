@@ -22,6 +22,9 @@
   }
   .site-logo {
     width: 50px;
+    &:hover{
+      color: $color__link-hover; 
+    }
   }
   nav {
     font-family: $font-family-accent;
@@ -53,7 +56,7 @@ fieldset {
   
   label {
     width: 100px;
-    color: #f0e4d1; 
+    color: $color__link-hover; 
     input{
       height: 100%;
     }
@@ -62,7 +65,7 @@ fieldset {
   input,
   select,
   textarea {
-    color: #f0e4d1;
+    color: $color__link-hover;
     border: none;
     background: none;
     &:focus {
@@ -70,7 +73,7 @@ fieldset {
       border: none;
     }
     &::placeholder{
-      color: #f0e4d1;
+      color: $color__link-hover;
     }
   }
 }
@@ -93,7 +96,7 @@ fieldset {
     color: white;
     border: none;
     &:hover{
-        color: #f0e4d1;
+        color: $color__link-hover;
     }
   }
 }
