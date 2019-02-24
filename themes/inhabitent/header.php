@@ -36,7 +36,7 @@
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
 					<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 					<div class="search-container">
-						<button class="search-button"><i class="fas fa-search"></i></button>
+						<button class="search-button"><i class="fas fa-search fa-lg"></i></button>
 					
 					<?php get_search_form(); ?>
 					</div>

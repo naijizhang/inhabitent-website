@@ -10,7 +10,7 @@
   top: 0px;
   display: flex;
   flex-flow: row nowrap;
-  width: 100vw;
+  width: 100% !important;
   height: 60px;
   justify-content: space-between;
   align-items: center;
@@ -19,12 +19,13 @@
     height: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
   }
   .site-logo {
     width: 50px;
   }
   nav {
+    font-family: $font-family-accent;
+    text-transform: uppercase;
     width: 70vw;
     display: flex;
     justify-content: flex-end;
@@ -35,9 +36,11 @@
   display: flex;
   align-items: center;
   a {
-    margin-right: 20px;
+    margin-left: 20px;
   }
 }
+
+
 
 //search field
 fieldset {
@@ -48,23 +51,14 @@ fieldset {
   margin: 0px;
   padding: 0px;
   
-
   label {
     width: 100px;
-    line-height: 1;
+    color: #f0e4d1; 
+    input{
+      height: 100%;
+    }
   }
 
-  label {
-    color: #f0e4d1;
-  }
-//   input[type='text'] {
-//     transition: width 0.4s ease-in-out;
-//   }
-
-//   input[type='text']:focus {
-//     width: 200px;
-   
-//   }
   input,
   select,
   textarea {
@@ -75,10 +69,9 @@ fieldset {
       background-color: none;
       border: none;
     }
-  }
-  
-  button {
-    background: none;
+    &::placeholder{
+      color: #f0e4d1;
+    }
   }
 }
 
@@ -91,22 +84,23 @@ fieldset {
 .search-container{
   display:flex;
   flex-flow: row nowrap;
+  //search button
+  .search-button{
+    margin-right: 20px;
+    margin-left: 10px;
+    width: 30px;
+    background: none;
+    color: white;
+    border: none;
+    &:hover{
+        color: #f0e4d1;
+    }
+  }
 }
 .main-navigation{
   transition: all 1s ease-in-out;
 }
 
-
-
-// input::-webkit-input-placeholder,
-// textarea::-webkit-input-placeholder {
-//  transition: all 0.3s ease-in-out;
-// }
-
-// input:focus::-webkit-input-placeholder,
-// textarea:focus::-webkit-input-placeholder{ 
- 
-//  transform: translateX(-20px);
-//  visibility: visible !important;
-//  position: absolute;
-// }
+.home header h1{
+  display:none;
+}

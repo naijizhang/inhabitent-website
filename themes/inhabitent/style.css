@@ -336,8 +336,13 @@ big {
   font-size: 125%; }
 
 body {
-  min-width: 1120px;
-  width: 1120px; }
+  max-width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+*:focus {
+  outline: none; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -426,7 +431,7 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  width: 100vw;
+  width: 100% !important;
   height: 60px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -442,13 +447,12 @@ table {
     display: flex;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+            justify-content: flex-start; }
   .container .site-logo {
     width: 50px; }
   .container nav {
+    font-family: "Novecento Sans Web";
+    text-transform: uppercase;
     width: 70vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -465,7 +469,7 @@ table {
       -ms-flex-align: center;
           align-items: center; }
   .menu-menu-1-container a {
-    margin-right: 20px; }
+    margin-left: 20px; }
 
 fieldset {
   height: 25px;
@@ -478,9 +482,9 @@ fieldset {
   padding: 0px; }
   fieldset label {
     width: 100px;
-    line-height: 1; }
-  fieldset label {
     color: #f0e4d1; }
+    fieldset label input {
+      height: 100%; }
   fieldset input,
   fieldset select,
   fieldset textarea {
@@ -492,8 +496,18 @@ fieldset {
     fieldset textarea:focus {
       background-color: none;
       border: none; }
-  fieldset button {
-    background: none; }
+    fieldset input::-webkit-input-placeholder,
+    fieldset select::-webkit-input-placeholder,
+    fieldset textarea::-webkit-input-placeholder {
+      color: #f0e4d1; }
+    fieldset input::-ms-input-placeholder,
+    fieldset select::-ms-input-placeholder,
+    fieldset textarea::-ms-input-placeholder {
+      color: #f0e4d1; }
+    fieldset input::placeholder,
+    fieldset select::placeholder,
+    fieldset textarea::placeholder {
+      color: #f0e4d1; }
 
 .hero-image-header {
   width: 100vw;
@@ -508,10 +522,22 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap; }
+  .search-container .search-button {
+    margin-right: 20px;
+    margin-left: 10px;
+    width: 30px;
+    background: none;
+    color: white;
+    border: none; }
+    .search-container .search-button:hover {
+      color: #f0e4d1; }
 
 .main-navigation {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
+
+.home header h1 {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Forms

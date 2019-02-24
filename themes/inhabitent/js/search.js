@@ -20,7 +20,7 @@ jQuery(document).ready(function( $ ) {
            }  else{
             $('.search-field').attr("placeholder", "TYPE AND HIT ENTER...");
             $('.search-field').animate({
-                width: '200px',
+                width: '250px',
                 left: 0,
                 opacity: 1,
             }, {

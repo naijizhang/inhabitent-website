@@ -74,6 +74,9 @@ big {
 }
 
 body{
-	min-width:$website-width;
-	width: $website-width;
+	max-width: $website-width;
+	display: flex;
+}
+*:focus {
+    outline: none;
 }
