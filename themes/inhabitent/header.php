@@ -15,7 +15,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
     <?php wp_head(); ?>
 </head>
 
@@ -35,7 +34,7 @@
 			<?php $logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent.svg'; ?>
 			<style>
 				nav a,nav i {color: #248A83 !important;}
-				nav a:hover,nav i:hover{color:black !important;}
+                nav a:hover,nav i:hover{color:black !important;}
             </style>
             <?php endif ?>
 

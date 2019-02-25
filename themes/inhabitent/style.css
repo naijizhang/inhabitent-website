@@ -1139,3 +1139,95 @@ div .latest-adventure {
 
 #page {
   width: 100%; }
+
+.product-archive-heading {
+  margin-top: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-top: 1px dashed #a1a1a1;
+  border-bottom: 1px dashed #a1a1a1; }
+  .product-archive-heading h1 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 0px; }
+  .product-archive-heading .product-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .product-archive-heading .product-menu a {
+      font-family: "Novecento Sans Web";
+      font-size: 1.2rem;
+      color: #248A83;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: 20px 25px; }
+      .product-archive-heading .product-menu a:hover {
+        color: black; }
+
+.product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px; }
+  .product-container article {
+    width: 23%;
+    height: 330px;
+    overflow: hidden;
+    border: 1px solid #a1a1a1; }
+    .product-container article img {
+      display: block;
+      width: 260px;
+      height: 260px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .product-container article .text-container {
+      border-top: 5px solid #a1a1a1;
+      position: relative; }
+      .product-container article .text-container .product-name {
+        background: white;
+        position: absolute;
+        left: 0px;
+        top: 16px;
+        padding-left: 10px; }
+      .product-container article .text-container p {
+        margin-top: 16px; }
+      .product-container article .text-container .product-price {
+        background: white;
+        position: absolute;
+        right: 0px;
+        top: 16px;
+        padding-right: 10px; }
+
+.hero-image-header h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+.about-site-main h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 25px auto; }
+  .about-site-main h2:first-of-type {
+    margin-top: 50px; }
+
+.about-site-main p {
+  width: 70%;
+  margin: 1.5rem auto; }
+  .about-site-main p:last-of-type {
+    margin-bottom: 70px; }
