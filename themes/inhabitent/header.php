@@ -26,20 +26,31 @@
         <header id="masthead" class="site-header" role="banner">
 
 
-		<!-- the header text color change on some pages -->
+            <!-- the header text color change on some pages -->
             <?php $thispage = basename(get_permalink()); ?>
             <?php if ($thispage === "inhabitent" || $thispage === "about"): ?>
             <?php $logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent-white.svg'; ?>
             <?php else: ?>
-			<?php $logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent.svg'; ?>
-			<style>
-				nav a,nav i {color: #248A83 !important;}
-                nav a:hover,nav i:hover{color:black !important;}
+            <?php $logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent.svg'; ?>
+            <style>
+                nav a,
+                nav i {
+                    color: #248A83 !important;
+                }
+
+                nav a:hover,
+                nav i:hover {
+                    color: black !important;
+                }
+
+                fieldset input::placeholder {
+                    color: #a1a1a1;
+                }
             </style>
             <?php endif ?>
 
 
-           
+
             <div class="container">
 
                 <a class="logo-link" href="<?php echo get_home_url(); ?>">

@@ -74,6 +74,7 @@ fieldset {
     }
     &::placeholder{
       color: $color__link-hover;
+      font-family: $font-family-accent;
     }
   }
 }

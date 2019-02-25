@@ -27,7 +27,7 @@ jQuery(document).ready(function( $ ) {
                 duration: 400,
                 queue: true
             });
-            
+            $('.search-field').focus();
            }
                 
       });

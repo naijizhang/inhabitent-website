@@ -501,15 +501,18 @@ fieldset {
     fieldset input::-webkit-input-placeholder,
     fieldset select::-webkit-input-placeholder,
     fieldset textarea::-webkit-input-placeholder {
-      color: #f0e4d1; }
+      color: #f0e4d1;
+      font-family: "Novecento Sans Web"; }
     fieldset input::-ms-input-placeholder,
     fieldset select::-ms-input-placeholder,
     fieldset textarea::-ms-input-placeholder {
-      color: #f0e4d1; }
+      color: #f0e4d1;
+      font-family: "Novecento Sans Web"; }
     fieldset input::placeholder,
     fieldset select::placeholder,
     fieldset textarea::placeholder {
-      color: #f0e4d1; }
+      color: #f0e4d1;
+      font-family: "Novecento Sans Web"; }
 
 .hero-image-header {
   width: 100vw;
@@ -1270,48 +1273,49 @@ div .latest-adventure {
           background: #248A83;
           color: white;
           border: 1px solid white; }
-  .journal-page-content .widget-area {
-    width: 27%;
-    padding: 48px 0px 48px 48px; }
-    .journal-page-content .widget-area h2 {
-      margin: 0px;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 2px;
-      font-size: 1.5rem;
-      text-align: start; }
-    .journal-page-content .widget-area p {
-      margin: 15px 0px 15px 0px; }
-      .journal-page-content .widget-area p i {
-        width: 20px; }
-    .journal-page-content .widget-area .contact-address-container {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap; }
-      .journal-page-content .widget-area .contact-address-container i {
-        width: 26px;
-        margin-top: 5px; }
-      .journal-page-content .widget-area .contact-address-container .address-text-inner-container {
-        width: 100%; }
-        .journal-page-content .widget-area .contact-address-container .address-text-inner-container p {
-          margin: 0px; }
-    .journal-page-content .widget-area a {
-      text-decoration: none;
-      color: #248A83; }
-      .journal-page-content .widget-area a:hover {
-        color: black; }
-    .journal-page-content .widget-area .tent-biz-hours-class .day-of-week,
-    .journal-page-content .widget-area .tent-biz-hours-class .day-of-saturday,
-    .journal-page-content .widget-area .tent-biz-hours-class .day-of-sunday {
-      font-weight: bold; }
-    .journal-page-content .widget-area ul {
-      list-style-type: none;
-      padding: 0px;
-      margin: 0px; }
+
+.widget-area {
+  width: 27%;
+  padding: 48px 0px 48px 48px; }
+  .widget-area h2 {
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    text-align: start; }
+  .widget-area p {
+    margin: 15px 0px 15px 0px; }
+    .widget-area p i {
+      width: 20px; }
+  .widget-area .contact-address-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
+    .widget-area .contact-address-container i {
+      width: 26px;
+      margin-top: 5px; }
+    .widget-area .contact-address-container .address-text-inner-container {
+      width: 100%; }
+      .widget-area .contact-address-container .address-text-inner-container p {
+        margin: 0px; }
+  .widget-area a {
+    text-decoration: none;
+    color: #248A83; }
+    .widget-area a:hover {
+      color: black; }
+  .widget-area .tent-biz-hours-class .day-of-week,
+  .widget-area .tent-biz-hours-class .day-of-saturday,
+  .widget-area .tent-biz-hours-class .day-of-sunday {
+    font-weight: bold; }
+  .widget-area ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px; }
 
 .journal-picture-block {
   width: 100%;
@@ -1346,3 +1350,61 @@ div .latest-adventure {
     color: white;
     text-transform: uppercase;
     background: #248A83; }
+
+.findus-page-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-top: 60px; }
+  .findus-page-content #findus-page {
+    border-right: 1px solid #a1a1a1;
+    padding: 48px 56px 48px 0px;
+    width: 73%; }
+    .findus-page-content #findus-page h2 {
+      font-size: 2.4rem;
+      margin: 20px auto 20px 0px;
+      text-align: start;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px; }
+    .findus-page-content #findus-page iframe {
+      width: 100%;
+      height: 300px; }
+    .findus-page-content #findus-page h3 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: start; }
+    .findus-page-content #findus-page p {
+      font-size: 1rem;
+      line-height: 2rem; }
+
+.wpcf7 form label {
+  font-family: "Novecento Sans Web";
+  font-size: 1rem; }
+  .wpcf7 form label .red {
+    color: red; }
+
+.wpcf7 form textarea, .wpcf7 form .wpcf7-text {
+  background: #f1f1f1;
+  border: 1px solid #a1a1a1; }
+
+input[type=submit] {
+  background: #248A83;
+  color: white;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0px;
+  font-size: 15px;
+  padding: 12px 25px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web"; }
+  input[type=submit]:hover {
+    background: #195c58; }
