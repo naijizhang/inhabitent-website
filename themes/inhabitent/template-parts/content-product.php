@@ -8,14 +8,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-
-		<?php the_title( '<apan class="entry-title">', '</span>' ); ?>
+		<div class="text-container">
+		<?php the_title( '<span class="product-name">', '</span>' ); ?>
+		<p>.........................................................</p>
 		<span><?php echo CFS()->get('product_price'); ?></span>
-</div>
+		</div>
 
 
 </article><!-- #post-## -->
