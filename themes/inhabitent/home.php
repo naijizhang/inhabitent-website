@@ -7,8 +7,8 @@
  */
 get_header(); ?>
 
-<div id="primary" class="content-area">
-    <main id="main" class="about-site-main" role="main">
+<div id="primary" class="journal-page-content">
+    <main id="main" class="journal-site-main" role="main">
 
     <?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -19,6 +19,9 @@ get_header(); ?>
 
 			<?php endwhile; ?>
     </main><!-- #main -->
+
+    <?php get_sidebar(); ?> <!-- sidebar -->
+
 </div><!-- #primary -->
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?> 
