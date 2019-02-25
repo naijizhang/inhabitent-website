@@ -832,7 +832,23 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 30vh; }
+  height: 250px;
+  background: url("../../assets/images/dark-wood.png");
+  background-size: cover;
+  padding: 30px; }
+  footer h3 {
+    text-transform: uppercase;
+    text-align: start;
+    font-weight: 600;
+    color: #d99054;
+    font-size: 1.2rem;
+    letter-spacing: 2px; }
+  footer a {
+    text-decoration: none;
+    margin-bottom: 20px; }
+  footer i {
+    margin: auto 5px;
+    color: white; }
   footer .footer-contact-info {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -850,7 +866,8 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    width: 25%; }
+    width: 25%;
+    color: white; }
   footer .footer-logo {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -870,7 +887,18 @@ footer {
         -ms-flex-align: end;
             align-items: flex-end; }
     footer .footer-logo img {
-      width: 200px; }
+      margin-top: 20px;
+      width: 300px; }
+
+.copyright {
+  background: url("../../assets/images/dark-wood.png");
+  background-size: cover;
+  padding: 30px;
+  text-align: center; }
+  .copyright p {
+    margin-bottom: 0px;
+    font-family: "Novecento Sans Web";
+    color: white; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -980,7 +1008,8 @@ footer {
         font-weight: bold;
         margin: 0px;
         text-transform: uppercase;
-        text-decoration: none; }
+        text-decoration: none;
+        letter-spacing: 2px; }
         .latest-journal article .entry-title a:hover {
           color: black; }
     .latest-journal article input {

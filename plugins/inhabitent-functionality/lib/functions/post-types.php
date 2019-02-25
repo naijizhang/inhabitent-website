@@ -128,6 +128,6 @@ function inhabitent_adventure() {
 		'show_in_rest'          => true,
 	);
 	register_post_type( 'adventure', $args );
-
+    flush_rewrite_rules();
 }
 add_action( 'init', 'inhabitent_adventure', 0 );
