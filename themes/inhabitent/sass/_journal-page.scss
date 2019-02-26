@@ -6,9 +6,10 @@
   display: flex;
   flex-flow: row nowrap;
   margin-top: $header-height;
+  border-top: 1px solid $color_lighter_grey;
   //main content
   .journal-site-main {
-    border-right: 1px solid $color_light_grey;
+    border-right: 1px solid $color_lighter_grey;
     padding: 48px 56px 48px 0px;
     width: 73%;
     article {

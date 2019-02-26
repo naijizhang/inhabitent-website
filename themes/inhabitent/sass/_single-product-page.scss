@@ -1,6 +1,7 @@
 .single-product-content-area {
   margin: $header-height auto;
   padding: 60px 0px 60px 0px;
+  border-top: 1px solid $color_lighter_grey;
   article {
     display: flex;
     flex-flow: row nowrap;

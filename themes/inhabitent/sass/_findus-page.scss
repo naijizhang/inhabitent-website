@@ -3,8 +3,9 @@
   display: flex;
   flex-flow: row nowrap;
   margin-top: $header-height;
+  border-top: 1px solid $color_lighter_grey;
   #findus-page {
-    border-right: 1px solid $color_light_grey;
+    border-right: 1px solid $color_lighter_grey;
     padding: 48px 56px 48px 0px;
     width: 73%;
     h2 {
@@ -45,7 +46,7 @@
         }
         textarea,.wpcf7-text{
             background: rgb(241, 241, 241);
-            border: 1px solid $color_light_grey;
+            border: 1px solid $color_lighter_grey;
         }
     }
 }

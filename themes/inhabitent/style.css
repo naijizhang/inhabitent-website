@@ -947,8 +947,8 @@ object {
         -ms-flex-align: center;
             align-items: center;
     width: 23.8%;
-    border: 1px solid #a1a1a1;
-    border-top: 5px solid #a1a1a1; }
+    border: 1px solid #d6d6d6;
+    border-top: 5px solid #d6d6d6; }
     .product-types-container .product-type-item:hover {
       border: 1px solid #d99054;
       border-top: 5px solid #d99054; }
@@ -987,7 +987,7 @@ object {
           justify-content: space-between; }
   .latest-journal article {
     width: 32%;
-    border: 1px solid #a1a1a1; }
+    border: 1px solid #d6d6d6; }
     .latest-journal article img {
       width: 100%;
       height: 250px;
@@ -997,7 +997,7 @@ object {
       padding-bottom: 0px;
       font-size: 12px;
       line-height: 1.2;
-      border-top: 5px solid #a1a1a1; }
+      border-top: 5px solid #d6d6d6; }
     .latest-journal article .entry-title {
       padding: 15px;
       padding-top: 5px;
@@ -1148,8 +1148,8 @@ div .latest-adventure {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 50px;
-  border-top: 1px dashed #a1a1a1;
-  border-bottom: 1px dashed #a1a1a1; }
+  border-top: 1px dashed #d6d6d6;
+  border-bottom: 1px dashed #d6d6d6; }
   .product-archive-heading h1 {
     text-transform: uppercase;
     font-size: 2.4rem;
@@ -1189,7 +1189,7 @@ div .latest-adventure {
     width: 23%;
     height: 330px;
     overflow: hidden;
-    border: 1px solid #a1a1a1; }
+    border: 1px solid #d6d6d6; }
     .product-container article img {
       display: block;
       width: 100%;
@@ -1197,7 +1197,7 @@ div .latest-adventure {
       -o-object-fit: cover;
          object-fit: cover; }
     .product-container article .text-container {
-      border-top: 5px solid #a1a1a1;
+      border-top: 5px solid #d6d6d6;
       position: relative; }
       .product-container article .text-container .product-name {
         background: white;
@@ -1250,9 +1250,10 @@ div .latest-adventure {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  margin-top: 60px; }
+  margin-top: 60px;
+  border-top: 1px solid #d6d6d6; }
   .journal-page-content .journal-site-main {
-    border-right: 1px solid #a1a1a1;
+    border-right: 1px solid #d6d6d6;
     padding: 48px 56px 48px 0px;
     width: 73%; }
     .journal-page-content .journal-site-main article {
@@ -1363,9 +1364,10 @@ div .latest-adventure {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  margin-top: 60px; }
+  margin-top: 60px;
+  border-top: 1px solid #d6d6d6; }
   .findus-page-content #findus-page {
-    border-right: 1px solid #a1a1a1;
+    border-right: 1px solid #d6d6d6;
     padding: 48px 56px 48px 0px;
     width: 73%; }
     .findus-page-content #findus-page h2 {
@@ -1395,7 +1397,7 @@ div .latest-adventure {
 
 .wpcf7 form textarea, .wpcf7 form .wpcf7-text {
   background: #f1f1f1;
-  border: 1px solid #a1a1a1; }
+  border: 1px solid #d6d6d6; }
 
 input[type=submit] {
   background: #248A83;
@@ -1414,7 +1416,8 @@ input[type=submit] {
 
 .single-product-content-area {
   margin: 60px auto;
-  padding: 60px 0px 60px 0px; }
+  padding: 60px 0px 60px 0px;
+  border-top: 1px solid #d6d6d6; }
   .single-product-content-area article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1518,13 +1521,13 @@ input[type=submit] {
 
 .comments-area .depth-1 {
   padding-top: 20px;
-  border-bottom: 1px solid #a1a1a1; }
+  border-bottom: 1px solid #d6d6d6; }
   .comments-area .depth-1:last-child {
     border-bottom: none; }
 
 .comments-area .children {
   padding-top: 20px;
-  border-top: 1px solid #a1a1a1; }
+  border-top: 1px solid #d6d6d6; }
 
 .comments-area h2 {
   font-size: 2.1rem;

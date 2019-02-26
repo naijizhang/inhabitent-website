@@ -27,8 +27,8 @@
     flex-direction: column;
     align-items: center;
     width: 23.8%;
-    border: 1px solid $color_light_grey;
-    border-top: 5px solid $color_light_grey;
+    border: 1px solid $color_lighter_grey;
+    border-top: 5px solid $color_lighter_grey;
     &:hover {
       border: 1px solid $color_orange;
       border-top: 5px solid $color_orange;
@@ -67,7 +67,7 @@
   justify-content: space-between;
   article {
     width: 32%;
-    border: 1px solid $color_light_grey;
+    border: 1px solid $color_lighter_grey;
     img {
       width: 100%;
       height: 250px;
@@ -78,7 +78,7 @@
       padding-bottom: 0px;
       font-size: 12px;
       line-height: 1.2;
-      border-top: 5px solid $color_light_grey;
+      border-top: 5px solid $color_lighter_grey;
     }
     .entry-title {
       padding: 15px;
