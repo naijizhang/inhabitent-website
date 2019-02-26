@@ -19,7 +19,15 @@
 	<div class="journal-content entry-summary">
         <?php the_excerpt(); ?>
     </div><!-- .entry-summary -->
+    <?php if (have_posts()): ?>
     <div class="journal-button">
         <input type="button" value="READ ENTRY &rarr;" class="homebutton" id="go-to-post" onClick="document.location.href='<?php echo esc_url(get_permalink()) ?>'" />
     </div><!-- .entry-button -->
+<?php else:?>
+<h1 class="page-title">
+                <?php printf(esc_html('Search Results for: %s'), '<span>' . get_search_query() . '</span>'); ?>
+            </h1>
+            <br>
+            <p>Cannot find...</p>
+    <?php endif ?>
 </article><!-- #post-## --> 
