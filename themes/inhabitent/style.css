@@ -1411,3 +1411,53 @@ input[type=submit] {
   font-family: "Novecento Sans Web"; }
   input[type=submit]:hover {
     background: #195c58; }
+
+.single-product-content-area {
+  margin: 60px auto;
+  padding: 60px 0px 60px 0px; }
+  .single-product-content-area article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
+    .single-product-content-area article .single-product-image {
+      width: 50%;
+      padding-right: 30px; }
+    .single-product-content-area article .single-product-content {
+      width: 50%;
+      padding-left: 30px; }
+      .single-product-content-area article .single-product-content h1 {
+        margin: 0px;
+        text-align: start;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        line-height: 1;
+        margin-bottom: 20px;
+        color: #d99054;
+        font-weight: bold;
+        letter-spacing: 2px; }
+      .single-product-content-area article .single-product-content .single-price {
+        font-family: "Novecento Sans Web";
+        font-size: 1.5rem; }
+      .single-product-content-area article .single-product-content .single-product-description {
+        font-size: 1rem; }
+
+.product-share-buttons button {
+  margin-right: 5px;
+  color: black;
+  border: 1px solid black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0px;
+  font-size: 15px;
+  padding: 12px 25px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web"; }
+  .product-share-buttons button:hover {
+    background: #248A83;
+    color: white;
+    border: 1px solid white; }
