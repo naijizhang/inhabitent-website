@@ -46,9 +46,10 @@
                 fieldset input::placeholder {
                     color: #a1a1a1;
                 }
-                .site-header{
-        
+                fieldset input{
+                    color: black;
                 }
+                
             </style>
             <?php endif ?>
 

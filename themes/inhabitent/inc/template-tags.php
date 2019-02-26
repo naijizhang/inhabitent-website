@@ -228,11 +228,20 @@ function inhabitent_posts_on_page( $query ) {
 	if ( is_admin() || ! $query->is_main_query() ){
 		return;
 	}
+
+	//list order for taxonomy page
+	if(is_tax( 'product_type' )){
+		$query->set('orderby','title');
+		$query->set( 'posts_per_page', 16 );
+		$query->set( 'order','DESC');
+        return;
+	}
 	
+	//list order for product archive page
     if ( is_post_type_archive( 'product' )||is_tax('product_type') ) {
 		$query->set('orderby','title');
 		$query->set( 'posts_per_page', 16 );
-		$query->set( 'order','ASC');
+		$query->set( 'order','DESC');
         return;
     }
 }

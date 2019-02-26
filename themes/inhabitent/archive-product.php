@@ -12,7 +12,8 @@ get_header(); ?>
 		<h1>Shop Stuff</h1>
 
 		<!-- show product types -->
-		<?php $product_types = get_terms('product_type', array(
+		<?php $product_types = get_terms( array(
+		'taxonomy' => 'product_type',
 		'hide_empty' => false,
 		'orderby' => 'name',
 		'order' => 'ASC'

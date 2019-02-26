@@ -29,7 +29,7 @@
     </div><!-- .entry-content -->
 
     <div class="journal-button">
-        <input type="button" value="READ ENTRY" class="homebutton" id="go-to-post" onClick="document.location.href='<?php echo esc_url(get_permalink()) ?>'" />
+        <input type="button" value="READ ENTRY &rarr;" class="homebutton" id="go-to-post" onClick="document.location.href='<?php echo esc_url(get_permalink()) ?>'" />
     </div><!-- .entry-button -->
 
 </article><!-- #post-## --> 

@@ -1619,3 +1619,35 @@ input[type=submit] {
     background: #248A83; }
     .comment-respond .comment-form .form-submit input:hover {
       background: #195c58; }
+
+.search-content-area {
+  margin-left: 3px; }
+  .search-content-area h1 {
+    font-size: 2.4rem;
+    text-align: start;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #d6d6d6;
+    margin: 0px;
+    padding-bottom: 30px; }
+  .search-content-area article h2 {
+    font-size: 2.1rem;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 50px 0px 0px 0px;
+    line-height: 1.2; }
+    .search-content-area article h2 a {
+      text-decoration: none;
+      color: #248A83; }
+      .search-content-area article h2 a:hover {
+        color: black; }
+  .search-content-area article .entry-meta {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Web";
+    margin-top: 20px; }
+  .search-content-area article .entry-summary p {
+    margin-top: 10px; }
