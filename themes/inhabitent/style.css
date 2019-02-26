@@ -1651,3 +1651,26 @@ input[type=submit] {
     margin-top: 20px; }
   .search-content-area article .entry-summary p {
     margin-top: 10px; }
+
+.none-content-area {
+  margin-left: 3px; }
+  .none-content-area h1, .none-content-area h2 {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: start; }
+  .none-content-area h1 {
+    font-size: 2.4rem; }
+  .none-content-area h2 {
+    font-size: 1.5rem;
+    margin: 30px auto;
+    margin-bottom: 10px; }
+  .none-content-area ul {
+    padding: 0px;
+    margin: 0px; }
+  .none-content-area li {
+    list-style-type: none; }
+  .none-content-area a {
+    color: #248A83;
+    text-decoration: none; }

@@ -1,10 +1,10 @@
 jQuery(document).ready(function( $ ) {
-    $('.search-field').attr("placeholder", "TYPE AND HIT ENTER...");
-    $('.search-field').css("width","0");
-    $('.search-submit').hide();
+    $('header .search-field').attr("placeholder", "TYPE AND HIT ENTER...");
+    $('header .search-field').css("width","0");
+    $('header .search-submit').hide();
 
     let $count=1;
-    $('.search-button').click(()=>{
+    $('header .search-button').click(()=>{
 
            if($count++%2==0){
             $('.search-field').animate({
@@ -18,8 +18,8 @@ jQuery(document).ready(function( $ ) {
             });
             
            }  else{
-            $('.search-field').attr("placeholder", "TYPE AND HIT ENTER...");
-            $('.search-field').animate({
+            $('header .search-field').attr("placeholder", "TYPE AND HIT ENTER...");
+            $('header .search-field').animate({
                 width: '250px',
                 left: 0,
                 opacity: 1,
@@ -27,13 +27,13 @@ jQuery(document).ready(function( $ ) {
                 duration: 400,
                 queue: false
             });
-            $('.search-field').focus();
+            $('header .search-field').focus();
            }
            
            
            $( "body" ).mousedown(function() {
-            if($('.search-field').val()===""){
-                $('.search-field').animate({
+            if($('header .search-field').val()===""){
+                $('header .search-field').animate({
                     width: '0px',
                     left: 0,
                     opacity: 0,
