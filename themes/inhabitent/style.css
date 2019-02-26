@@ -830,7 +830,7 @@ object {
 .gallery-caption {
   display: block; }
 
-footer {
+.site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,20 +839,20 @@ footer {
   background: url("../../assets/images/dark-wood.png");
   background-size: cover;
   padding: 30px; }
-  footer h3 {
+  .site-footer h3 {
     text-transform: uppercase;
     text-align: start;
     font-weight: 600;
     color: #d99054;
     font-size: 1.2rem;
     letter-spacing: 2px; }
-  footer a {
+  .site-footer a {
     text-decoration: none;
     margin-bottom: 20px; }
-  footer i {
+  .site-footer i {
     margin: auto 5px;
     color: white; }
-  footer .footer-contact-info {
+  .site-footer .footer-contact-info {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -861,7 +861,7 @@ footer {
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
     width: 25%; }
-  footer .footer-business-hour {
+  .site-footer .footer-business-hour {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -871,7 +871,7 @@ footer {
             flex-flow: column nowrap;
     width: 25%;
     color: white; }
-  footer .footer-logo {
+  .site-footer .footer-logo {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -889,7 +889,7 @@ footer {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end; }
-    footer .footer-logo img {
+    .site-footer .footer-logo img {
       margin-top: 20px;
       width: 300px; }
 
@@ -910,8 +910,8 @@ footer {
 .logo-container {
   position: absolute;
   width: 100%;
-  top: 25%;
-  height: 50%;
+  top: 90px;
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1445,6 +1445,9 @@ input[type=submit] {
       .single-product-content-area article .single-product-content .single-product-description {
         font-size: 1rem; }
 
+.product-share-buttons i {
+  margin-right: 5px; }
+
 .product-share-buttons button {
   margin-right: 5px;
   color: black;
@@ -1461,3 +1464,158 @@ input[type=submit] {
     background: #248A83;
     color: white;
     border: 1px solid white; }
+
+.single-content-area .entry-header {
+  width: 100%;
+  height: 500px; }
+  .single-content-area .entry-header img {
+    width: 100%;
+    height: 100%;
+    display: block; }
+  .single-content-area .entry-header .entry-title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #248A83;
+    display: inline;
+    margin: 40px 25% 0px 0px;
+    padding: 10px 20px 10px 20px;
+    line-height: 1.2;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: start;
+    text-transform: uppercase;
+    color: white; }
+  .single-content-area .entry-header .entry-meta {
+    font-family: "Novecento Sans Web";
+    position: absolute;
+    height: 37px;
+    right: 0px;
+    top: 463px;
+    padding: 5px 20px 5px 20px;
+    display: inline;
+    color: white;
+    text-transform: uppercase;
+    background: #248A83; }
+
+.single-content-area .entry-content {
+  margin-left: 3px; }
+
+.single-content-area .entry-footer {
+  margin-left: 3px;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web"; }
+  .single-content-area .entry-footer span {
+    margin-right: 30px; }
+  .single-content-area .entry-footer a {
+    color: #248A83;
+    text-decoration: none; }
+    .single-content-area .entry-footer a:hover {
+      color: black; }
+
+.single-content-area .product-share-buttons {
+  margin-left: 3px; }
+
+.comments-area .depth-1 {
+  padding-top: 20px;
+  border-bottom: 1px solid #a1a1a1; }
+  .comments-area .depth-1:last-child {
+    border-bottom: none; }
+
+.comments-area .children {
+  padding-top: 20px;
+  border-top: 1px solid #a1a1a1; }
+
+.comments-area h2 {
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  text-align: start;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 60px auto 20px 0px; }
+
+.comments-area img {
+  border-radius: 50%; }
+
+.comments-area .comment-content {
+  margin-left: 20px; }
+  .comments-area .comment-content .comment-author {
+    font-weight: bold; }
+  .comments-area .comment-content .comment-metadata {
+    color: #a1a1a1; }
+  .comments-area .comment-content p {
+    margin: 15px auto; }
+  .comments-area .comment-content .reply a {
+    text-decoration: none;
+    color: #248A83; }
+    .comments-area .comment-content .reply a:hover {
+      color: black; }
+
+.comments-area {
+  margin-left: 3px; }
+  .comments-area ol {
+    padding: 0px;
+    margin: 0px; }
+  .comments-area .comment-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
+
+.comment-respond h3 {
+  text-align: start;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px; }
+  .comment-respond h3 a {
+    font-size: 80%;
+    color: #248A83;
+    text-decoration: none; }
+    .comment-respond h3 a:hover {
+      color: black; }
+
+.comment-respond .comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web";
+  margin-left: 3px; }
+  .comment-respond .comment-form input {
+    width: 100%;
+    background: #f1f1f1;
+    border: 1px solid #d6d6d6; }
+  .comment-respond .comment-form .red {
+    color: red; }
+  .comment-respond .comment-form .comment-notes {
+    width: 100%;
+    text-transform: none;
+    font-family: "Merriweather Web"; }
+  .comment-respond .comment-form .comment-form-comment {
+    width: 100%;
+    height: 300px; }
+    .comment-respond .comment-form .comment-form-comment textarea {
+      height: 80%;
+      border: 1px solid #d6d6d6;
+      background: #f1f1f1; }
+  .comment-respond .comment-form .comment-form-name {
+    width: 48%;
+    margin-right: 2%; }
+  .comment-respond .comment-form .comment-form-email {
+    width: 48%;
+    margin-left: 2%; }
+  .comment-respond .comment-form .comment-form-website {
+    width: 100%; }
+  .comment-respond .comment-form .form-submit input {
+    border: none;
+    background: #248A83; }
+    .comment-respond .comment-form .form-submit input:hover {
+      background: #195c58; }
