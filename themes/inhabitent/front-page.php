@@ -8,9 +8,9 @@
 
 get_header(); ?>
 <?php $logo_large_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-full.svg'; ?>
-<div class="logo-container">
+<main class="logo-container">
     <img class="frontsite-header-logo" src='<?php echo $logo_large_url ?>'>
-</div>
+</main>
 <?php if (have_posts()): while (have_posts()): the_post();
         the_content();
     endwhile;
