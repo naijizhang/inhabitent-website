@@ -241,3 +241,21 @@ div .latest-adventure {
   height: 100vh;
 }
 
+// archive page
+.archive-site-main{
+  padding: 48px 5% 48px 0px !important;
+}
+.archive-content{
+  
+  h1{
+    width: 100%;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: start;
+    border-bottom: 1px solid $color_lighter_grey;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+  }
+}
