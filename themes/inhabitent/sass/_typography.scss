@@ -73,9 +73,16 @@ big {
 	font-size: 125%;
 }
 
-body{
-	max-width: $website-width;
+
+.site-content{
 	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+
+}
+.content-area{
+	max-width: $website-width;
+	margin: auto;
 }
 *:focus {
     outline: none;

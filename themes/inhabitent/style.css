@@ -335,11 +335,21 @@ mark, ins {
 big {
   font-size: 125%; }
 
-body {
-  max-width: 1120px;
+.site-content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.content-area {
+  max-width: 1120px;
+  margin: auto; }
 
 *:focus {
   outline: none; }
