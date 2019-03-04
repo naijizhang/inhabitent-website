@@ -1,0 +1,46 @@
+.single-adventure-content-area{
+    width: 100%;
+    border-top: none;
+    margin-top: 0px;
+  
+    .single-site-main{
+       padding-top: 0px;
+        width: 100%;
+        border-right: none;
+        padding-right: 0px;
+        
+        img{
+            z-index:auto;
+            width: 100%;
+        }
+        .article-content{
+            padding-left: 140px;
+            padding-right: 140px;
+            h2{
+                text-transform: uppercase;
+                text-align: start;
+                margin-bottom: 0px;
+                margin-top: 40px;
+                font-size: 2.4rem;
+                font-weight: bold;
+                letter-spacing: 2px;
+                line-height: 1.25;
+            }
+            .author-name{
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                font-family: $font-family-accent;
+            }
+            .journal-content{
+                p{
+                    margin-right: 0px;
+                }
+    
+            }
+            .product-share-buttons{
+                margin-top: 25px;
+            }
+        }
+       
+    }
+}

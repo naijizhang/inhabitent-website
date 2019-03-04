@@ -28,7 +28,8 @@
 
             <!-- the header text color change on some pages -->
             <?php $thispage = basename(get_permalink()); ?>
-            <?php if ($thispage === "inhabitent" || $thispage === "about"): ?>
+            <?php $parentpage = basename(dirname(get_permalink())); ?>
+            <?php if ($thispage === "inhabitent" || $thispage === "about"||$parentpage==="adventure"): ?>
             <?php $logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent-white.svg'; ?>
             <?php else: ?>
             <?php $logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent.svg'; ?>
