@@ -1223,15 +1223,17 @@ div .latest-adventure {
          object-fit: cover; }
     .product-container article .text-container {
       border-top: 5px solid #d6d6d6;
-      position: relative; }
+      position: relative;
+      width: 100%; }
       .product-container article .text-container .product-name {
-        background: white;
-        position: absolute;
-        left: 0px;
-        top: 16px;
-        padding-left: 10px; }
-      .product-container article .text-container p {
-        margin-top: 16px; }
+        margin-top: 16px;
+        padding-left: 10px;
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap; }
+        .product-container article .text-container .product-name:after {
+          content: " .................................................................................."; }
       .product-container article .text-container .product-price {
         background: white;
         position: absolute;

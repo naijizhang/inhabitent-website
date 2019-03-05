@@ -51,16 +51,15 @@
         .text-container{
             border-top: 5px solid $color_lighter_grey;
             position: relative;
-
+            width: 100%;
             .product-name{
-               background: white;
-                position: absolute;
-                left: 0px;
-                top:16px;
-                padding-left: 10px;
-            }
-            p{
                 margin-top: 16px;
+                padding-left: 10px;
+                float: left; 
+                width: 100%; 
+                overflow: hidden; 
+                white-space: nowrap;
+                &:after { content: " .................................................................................." }
             }
             .product-price{
                 background: white;

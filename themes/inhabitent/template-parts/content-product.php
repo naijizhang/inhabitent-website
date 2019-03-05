@@ -15,7 +15,6 @@
 	</a>
 		<div class="text-container">
 		<?php the_title( '<span class="product-name">', '</span>' ); ?>
-		<p>..............................................................</p>
 		<span class="product-price"><?php echo CFS()->get('product_price'); ?></span>
 		</div>
 
