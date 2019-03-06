@@ -68,13 +68,8 @@ if ( post_password_required() ) {
 	<?php comment_form( array(
 		'title_reply'          => esc_html( 'Post a Comment' ),
 		'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
-		'logged_in_as' => '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>',
 		'label_submit'         => esc_html( 'Submit' ),
 		'cancel_reply_link'    => esc_html( '[Cancel reply]' ),
-		'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>
-		<p class="comment-form-name"><label for="comment">' . _x( 'Name', 'noun' ) . '<span class="red">*</span>'.'</label><br /><input  id="comment-email" name="comment-email" ></textarea></p>
-		<p class="comment-form-email"><label for="comment">' . _x( 'Email', 'noun' ) . '<span class="red">*</span>'. '</label><br /><input  id="comment-email" name="comment-email" ></textarea></p>
-		<p class="comment-form-website"><label for="comment">' . _x( 'Website', 'noun' ) . '</label><br /><input  id="comment-email" name="comment-email" ></textarea></p>',
 	) ); ?>
 
 </div><!-- #comments -->

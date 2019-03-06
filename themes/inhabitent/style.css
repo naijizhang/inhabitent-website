@@ -1507,6 +1507,8 @@ input[type=submit] {
     display: block; }
   .single-content-area .entry-header .entry-title {
     position: absolute;
+    font-size: 2.5rem;
+    line-height: 1.25;
     top: 0px;
     left: 0px;
     background: #248A83;
@@ -1548,6 +1550,18 @@ input[type=submit] {
 
 .single-content-area .product-share-buttons {
   margin-left: 3px; }
+
+.comments-area a {
+  color: #248A83;
+  text-decoration: none; }
+  .comments-area a:nth-of-type(2) {
+    margin-left: 10px; }
+  .comments-area a:hover {
+    color: black; }
+
+.comments-area p:nth-of-type(1) {
+  font-family: "Merriweather Web";
+  text-transform: initial; }
 
 .comments-area .depth-1 {
   padding-top: 20px;
@@ -1626,7 +1640,7 @@ input[type=submit] {
     width: 100%;
     background: #f1f1f1;
     border: 1px solid #d6d6d6; }
-  .comment-respond .comment-form .red {
+  .comment-respond .comment-form .required {
     color: red; }
   .comment-respond .comment-form .comment-notes {
     width: 100%;
@@ -1639,13 +1653,13 @@ input[type=submit] {
       height: 80%;
       border: 1px solid #d6d6d6;
       background: #f1f1f1; }
-  .comment-respond .comment-form .comment-form-name {
+  .comment-respond .comment-form .comment-form-author {
     width: 48%;
     margin-right: 2%; }
   .comment-respond .comment-form .comment-form-email {
     width: 48%;
     margin-left: 2%; }
-  .comment-respond .comment-form .comment-form-website {
+  .comment-respond .comment-form .comment-form-url {
     width: 100%; }
   .comment-respond .comment-form .form-submit input {
     border: none;
