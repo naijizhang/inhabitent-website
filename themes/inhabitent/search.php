@@ -10,7 +10,7 @@ get_header(); ?>
 <section id="primary" class="journal-page-content search-content-area">
     <main id="main" class="journal-site-main search-site-main" role="main">
 
-        <?php if (have_posts()): ?>
+        <?php if (have_posts()) : ?>
 
         <header class="page-header">
             <h1 class="page-title">
@@ -19,17 +19,28 @@ get_header(); ?>
         </header><!-- .page-header -->
 
         <?php  /* Start the Loop */ ?>
-        <?php while (have_posts()): the_post(); ?>
+        <?php while (have_posts()) : the_post(); ?>
+        <article>
+            <?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
+            <div class="journal-content entry-summary">
+                <?php the_excerpt(); ?>
+            </div><!-- .entry-summary -->
 
-        <?php get_template_part('template-parts/content-search', 'search'); ?>
-
+            <div class="journal-button">
+                <input type="button" value="READ ENTRY &rarr;" class="homebutton" id="go-to-post" onClick="document.location.href='<?php echo esc_url(get_permalink()) ?>'" />
+            </div><!-- .entry-button -->
+        </article>
         <?php endwhile; ?>
 
         <?php inhabitent_numbered_pagination(); ?>
 
-        <?php else: ?>
+        <?php else : ?>
 
-        <?php get_template_part('template-parts/content-search', 'none'); ?>
+        <h1 class="page-title">
+            <?php printf(esc_html('Search Results for: %s'), '<span>' . get_search_query() . '</span>'); ?>
+        </h1>
+        <br>
+        <p>Cannot find...</p>
 
         <?php endif; ?>
 
