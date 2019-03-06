@@ -65,9 +65,6 @@
                 <nav id="site-navigation" class="main-navigation green" role="navigation">
                     <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
                     <div class="search-container">
-                        <button class="search-button">
-                            <i class="fas fa-search fa-lg"></i>
-                        </button>
                         <?php get_search_form(); ?>
                     </div>
                 </nav><!-- #site-navigation -->

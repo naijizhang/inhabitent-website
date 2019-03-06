@@ -54,6 +54,7 @@ fieldset {
   align-items: center;
   margin: 0px;
   padding: 0px;
+ 
   
   label {
     width: 100px;
@@ -90,16 +91,20 @@ fieldset {
   display:flex;
   flex-flow: row nowrap;
   //search button
-  .search-button{
-    margin-right: 20px;
+  .search-submit{
+    margin-right: 30px;
     margin-left: 10px;
     width: 30px;
     background: none;
     color: white;
     border: none;
+    float: left;
     &:hover{
         color: $color__link-hover;
     }
+  }
+  .search-field{
+    margin-right: 30px;
   }
 }
 .main-navigation{
