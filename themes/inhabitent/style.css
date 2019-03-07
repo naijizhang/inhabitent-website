@@ -432,6 +432,38 @@ table {
           align-items: center;
   z-index: 100; }
 
+.green nav a,
+.green nav i {
+  color: #248a83 !important; }
+
+.green nav a:hover,
+.green nav i:hover {
+  color: black !important; }
+
+.green fieldset input::-webkit-input-placeholder {
+  color: #a1a1a1; }
+
+.green fieldset input::-ms-input-placeholder {
+  color: #a1a1a1; }
+
+.green fieldset input::placeholder {
+  color: #a1a1a1; }
+
+.green fieldset input {
+  color: black; }
+
+.fixed-header-logged {
+  position: fixed !important;
+  top: 30px !important;
+  border-bottom: 1px solid #d6d6d6;
+  background: rgba(255, 255, 255, 0.8); }
+
+.fixed-header-unlog {
+  position: fixed !important;
+  top: 0px !important;
+  border-bottom: 1px solid #d6d6d6;
+  background: rgba(255, 255, 255, 0.8); }
+
 .container {
   position: absolute;
   top: 0px;
@@ -1176,7 +1208,6 @@ div .latest-adventure {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 50px;
-  border-top: 1px dashed #d6d6d6;
   border-bottom: 1px dashed #d6d6d6; }
   .product-archive-heading h1 {
     text-transform: uppercase;
@@ -1280,8 +1311,7 @@ div .latest-adventure {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  margin-top: 60px;
-  border-top: 1px solid #d6d6d6; }
+  margin-top: 60px; }
   .journal-page-content .journal-site-main {
     border-right: 1px solid #d6d6d6;
     padding: 48px 56px 48px 0px;
@@ -1394,8 +1424,7 @@ div .latest-adventure {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  margin-top: 60px;
-  border-top: 1px solid #d6d6d6; }
+  margin-top: 60px; }
   .findus-page-content #findus-page {
     border-right: 1px solid #d6d6d6;
     padding: 48px 56px 48px 0px;
@@ -1446,8 +1475,7 @@ input[type=submit] {
 
 .single-product-content-area {
   margin: 60px auto;
-  padding: 60px 0px 60px 0px;
-  border-top: 1px solid #d6d6d6; }
+  padding: 60px 0px 60px 0px; }
   .single-product-content-area article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1764,7 +1792,6 @@ input[type=submit] {
     padding-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 50px;
-    border-top: 1px solid #d6d6d6;
     border-bottom: 1px dashed #d6d6d6; }
   .archive-adventure .all-adventure {
     width: 100%;

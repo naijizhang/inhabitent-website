@@ -25,7 +25,6 @@ jQuery(document).ready(function($) {
       $('header .search-field').hide(500);
     }
   });
-  let logo_url;
   //On home page, listen to scroll action, change the header position
   if (jQuery('body').hasClass('home')) {
     $(window).scroll(function() {
@@ -68,5 +67,15 @@ jQuery(document).ready(function($) {
         $('.site-logo').attr("src",directory_uri.stylesheet_directory_uri+ '/assets/images/logos/inhabitent-logo-tent-white.svg');
       }
     });
+  }
+
+  if (!jQuery('body').hasClass('home')&&!jQuery('body').hasClass('single-adventure')&&!jQuery('body').hasClass('page-template-about')) {
+   if(jQuery('body').hasClass('logged-in')){
+    $('.container').addClass('fixed-header-logged');
+   }else{
+    $('.container').addClass('fixed-header-unlog');
+   }
+ 
+     
   }
 });

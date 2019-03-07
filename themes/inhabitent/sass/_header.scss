@@ -6,6 +6,36 @@
   align-items: center;
   z-index: 100;
 }
+.green {
+  nav a,
+  nav i {
+    color: #248a83 !important;
+  }
+
+  nav a:hover,
+  nav i:hover {
+    color: black !important;
+  }
+
+  fieldset input::placeholder {
+    color: #a1a1a1;
+  }
+  fieldset input {
+    color: black;
+  }
+}
+.fixed-header-logged{
+  position: fixed !important;
+  top:30px !important;
+  border-bottom: 1px solid $color_lighter_grey; 
+  background: rgba(255,255,255,0.8) ;
+}
+.fixed-header-unlog{
+  position: fixed !important;
+  top:0px !important;
+  border-bottom: 1px solid $color_lighter_grey; 
+  background: rgba(255,255,255,0.8) ;
+}
 .container {
   position: absolute;
   top: 0px;
@@ -23,8 +53,8 @@
   }
   .site-logo {
     width: 50px;
-    &:hover{
-      color: $color__link-hover; 
+    &:hover {
+      color: $color__link-hover;
     }
   }
   nav {
@@ -44,8 +74,6 @@
   }
 }
 
-
-
 //search field
 fieldset {
   height: 25px;
@@ -54,12 +82,11 @@ fieldset {
   align-items: center;
   margin: 0px;
   padding: 0px;
- 
-  
+
   label {
     width: 100px;
-    color: $color__link-hover; 
-    input{
+    color: $color__link-hover;
+    input {
       height: 100%;
     }
   }
@@ -74,24 +101,23 @@ fieldset {
       background-color: none;
       border: none;
     }
-    &::placeholder{
+    &::placeholder {
       color: $color__link-hover;
       font-family: $font-family-accent;
     }
   }
 }
 
-
 .hero-image-header {
   width: 100vw;
   height: 100vh;
   background-size: cover;
 }
-.search-container{
-  display:flex;
+.search-container {
+  display: flex;
   flex-flow: row nowrap;
   //search button
-  .search-submit{
+  .search-submit {
     margin-right: 30px;
     margin-left: 10px;
     width: 30px;
@@ -99,18 +125,18 @@ fieldset {
     color: white;
     border: none;
     float: left;
-    &:hover{
-        color: $color__link-hover;
+    &:hover {
+      color: $color__link-hover;
     }
   }
-  .search-field{
+  .search-field {
     margin-right: 30px;
   }
 }
-.main-navigation{
+.main-navigation {
   transition: all 1s ease-in-out;
 }
 
-.home header h1{
-  display:none;
+.home header h1 {
+  display: none;
 }
