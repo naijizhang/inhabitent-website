@@ -11,10 +11,10 @@ get_header(); ?>
 <main class="logo-container">
     <img class="frontsite-header-logo" src='<?php echo $logo_large_url ?>'>
 </main>
-<?php if (have_posts()): while (have_posts()): the_post();
+<?php if (have_posts()) : while (have_posts()) : the_post();
         the_content();
     endwhile;
-else: ?>
+else : ?>
 <p>Sorry, no posts matched your criteria.</p>
 <?php endif; ?>
 <div id="primary" class="content-area">
@@ -28,9 +28,9 @@ else: ?>
         )); ?>
         <h2 class="heading-show-stuff">SHOP STUFF</h2>
         <div class="product-types-container">
-            <?php foreach ($product_types as $product_type): ?>
+            <?php foreach ($product_types as $product_type) : ?>
             <div class="product-type-item">
-                <img class="product-type-logo" src=<?php echo inhabitent_get_product_type_logo($product_type->name . '.svg') ?> >
+                <img class="product-type-logo" src=<?php echo inhabitent_get_product_type_logo($product_type->name . '.svg') ?>>
                 <p>
                     <?php echo $product_type->description ?>
                 </p>
@@ -45,8 +45,23 @@ else: ?>
         <h2 class="heading-journal">INHABITENT JOURNAL</h2>
         <div class="latest-journal">
             <?php $journal_posts = inhabitent_get_latest_posts(); ?>
-            <?php foreach ($journal_posts as $post): setup_postdata($post); ?>
-            <?php get_template_part('template-parts/content-latest-post'); ?>
+            <?php foreach ($journal_posts as $post) : setup_postdata($post); ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <div class="entry-header">
+                    <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('large'); ?>
+                    <?php endif; ?>
+                    <?php if ('post' === get_post_type()) : ?>
+                    <div class="entry-meta">
+                        <?php inhabitent_posted_on(); ?> / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?>
+                    </div><!-- .entry-meta -->
+                    <?php endif; ?>
+                    <?php the_title(sprintf('<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h3>'); ?>
+                </div><!-- .entry-header -->
+                <div class="entry-button">
+                    <input type="button" value="READ ENTRY" class="homebutton" id="go-to-post" onClick="document.location.href='<?php echo esc_url(get_permalink()) ?>'" />
+                </div><!-- .entry-button -->
+            </article><!-- #post-## -->
             <?php endforeach;
         wp_reset_postdata(); ?>
         </div>
@@ -55,12 +70,16 @@ else: ?>
         <h2 class="heading-adventure">LATEST ADVENTURES</h2>
         <div class="latest-adventure">
             <?php $adventures = inhabitent_get_adventures(); ?>
-            <?php foreach ($adventures as $post): setup_postdata($post); ?>
-            <?php 
-            // the_post_thumbnail('medium_large');
-            // the_title();
-            get_template_part('template-parts/content-adventure');
-            ?>
+            <?php foreach ($adventures as $post) : setup_postdata($post); ?>
+            <article id="adventure-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <?php if (has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail('large'); ?>
+                <?php endif; ?>
+                <div class="adventure-title-button">
+                    <?php the_title(sprintf('<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h3>'); ?>
+                    <input type="button" value="READ MORE" class="homebutton" id="go-to-post" onClick="document.location.href='<?php echo esc_url(get_permalink()) ?>'" />
+                </div><!-- .entry-button -->
+            </article><!-- #post-## -->
             <?php endforeach;
         wp_reset_postdata(); ?>
         </div>
