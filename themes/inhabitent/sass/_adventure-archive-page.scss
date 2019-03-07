@@ -1,5 +1,7 @@
 .archive-adventure {
-  margin: $header-height 0px 100px 0px;
+  margin-top: $header-height;
+  margin-bottom: $header-height;
+  width: 100%;
 h2.heading-adventure{
     font-weight: bold;
     letter-spacing: 2px;

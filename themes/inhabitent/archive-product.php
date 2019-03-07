@@ -7,7 +7,8 @@
  */
 
 get_header(); ?>
-
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
 	<div class="product-archive-heading">
 		<h1>Shop Stuff</h1>
 
@@ -35,5 +36,6 @@ get_header(); ?>
 			<?php endwhile; ?>
 		<?php endif; ?>
 	</div>
-
+	</main><!-- #main -->
+</div><!-- #primary -->
 <?php get_footer(); ?>

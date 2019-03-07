@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="single-product-content-area">
+<div id="primary" class="content-area single-product-content-area">
     <main id="main" class="single-product-main" role="main">
 
         <?php while (have_posts()) : the_post(); ?>

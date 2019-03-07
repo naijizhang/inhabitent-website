@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="journal-page-content single-adventure-content-area">
+<div id="primary" class="content-area journal-page-content single-adventure-content-area">
     <main id="main" class="journal-site-main single-site-main" role="main">
 
         <?php while (have_posts()) : the_post(); ?>

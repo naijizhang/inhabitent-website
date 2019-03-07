@@ -7,7 +7,7 @@
  */
 get_header(); ?>
 
-<div id="primary" class="journal-page-content">
+<div id="primary" class="content-area journal-page-content">
     <main id="main" class="journal-site-main" role="main">
 
     <?php /* Start the Loop */ ?>

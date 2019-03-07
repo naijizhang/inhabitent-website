@@ -7,7 +7,8 @@
  */
 
 get_header(); ?>
-
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
 <div class="product-archive-heading single-type">
     <h1 class="page-title">
         <?php single_cat_title(); ?>
@@ -25,5 +26,6 @@ get_header(); ?>
     <?php endwhile; ?>
     <?php endif; ?>
 </div>
-
+</main><!-- #main -->
+</div><!-- #primary -->
 <?php get_footer(); ?> 

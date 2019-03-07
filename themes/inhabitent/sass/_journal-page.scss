@@ -1,4 +1,5 @@
 .widget{
+    margin-top: 60px;
     margin-bottom: 50px;
 }
 .journal-page-content {
@@ -10,7 +11,7 @@
   //main content
   .journal-site-main {
     border-right: 1px solid $color_lighter_grey;
-    padding: 48px 56px 48px 0px;
+    padding: 108px 56px 48px 0px;
     width: 73%;
     article {
       position: relative;
