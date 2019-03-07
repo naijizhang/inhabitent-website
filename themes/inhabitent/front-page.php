@@ -26,7 +26,7 @@ else : ?>
             'orderby' => 'name',
             'order' => 'ASC'
         )); ?>
-        <h2 class="heading-show-stuff">SHOP STUFF</h2>
+        <h2 class="heading-show-stuff">Shop Stuff</h2>
         <div class="product-types-container">
             <?php foreach ($product_types as $product_type) : ?>
             <div class="product-type-item">
@@ -42,7 +42,7 @@ else : ?>
 
 
         <!-- show the latest 3 posts -->
-        <h2 class="heading-journal">INHABITENT JOURNAL</h2>
+        <h2 class="heading-journal">Inhabitent Journal</h2>
         <div class="latest-journal">
             <?php $journal_posts = inhabitent_get_latest_posts(); ?>
             <?php foreach ($journal_posts as $post) : setup_postdata($post); ?>
@@ -67,7 +67,7 @@ else : ?>
         </div>
 
         <!-- show the latest 4 advantures in grid -->
-        <h2 class="heading-adventure">LATEST ADVENTURES</h2>
+        <h2 class="heading-adventure">Latest Adventures</h2>
         <div class="latest-adventure">
             <?php $adventures = inhabitent_get_adventures(); ?>
             <?php foreach ($adventures as $post) : setup_postdata($post); ?>

@@ -970,6 +970,9 @@ object {
   .logo-container .frontsite-header-logo {
     width: 275px; }
 
+.home h2, .archive-adventure h2 {
+  text-transform: uppercase; }
+
 .product-types-container {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -13,7 +13,7 @@ get_header(); ?>
 
 
 
-        <h2 class="heading-adventure">LATEST ADVENTURES</h2>
+        <h2 class="heading-adventure">Latest Adventures</h2>
         <div class="latest-adventure all-adventure">
             <?php $adventures = inhabitent_get_adventures(); ?>
             <?php foreach ($adventures as $post) : setup_postdata($post); ?>
