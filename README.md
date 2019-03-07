@@ -11,7 +11,7 @@ Using custom plugins to add sidebar.
 Custom post type and taxonomy.
 
 CSS animation.
-<img src="./themes/inhabitent/assets/Homepage.png" style="width: 100%;" />
+<img src="./themes/inhabitent/assets/images/Homepage.png" style="width: 100%;" />
 
 ## Installation
 
