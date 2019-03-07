@@ -26,37 +26,15 @@
         <header id="masthead" class="site-header" role="banner">
 
 
-            <!-- the header text color change on some pages -->
+            <!-- the header logo change on some pages -->
             <?php $thispage = basename(get_permalink()); ?>
             <?php $parentpage = basename(dirname(get_permalink())); ?>
             <?php if ($thispage === "inhabitent" || $thispage === "about" || ($parentpage === "adventure" && !is_archive())) : ?>
             <?php $logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent-white.svg'; ?>
             <?php else : ?>
             <?php $logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent.svg'; ?>
-           
-            <style>
-                nav a,
-                nav i {
-                    color: #248A83 !important;
-                }
-
-                nav a:hover,
-                nav i:hover {
-                    color: black !important;
-                }
-
-                fieldset input::placeholder {
-                    color: #a1a1a1;
-                }
-
-                fieldset input {
-                    color: black;
-                }
-            </style>
             <?php endif ?>
-          
-
-
+   
             <div class="container">
 
                 <a class="logo-link" href="<?php echo get_home_url(); ?>">

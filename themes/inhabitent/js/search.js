@@ -70,7 +70,8 @@ jQuery(document).ready(function($) {
   }
 
   if (!jQuery('body').hasClass('home')&&!jQuery('body').hasClass('single-adventure')&&!jQuery('body').hasClass('page-template-about')) {
-   if(jQuery('body').hasClass('logged-in')){
+    $('.container').addClass('green');
+    if(jQuery('body').hasClass('logged-in')){
     $('.container').addClass('fixed-header-logged');
    }else{
     $('.container').addClass('fixed-header-unlog');
