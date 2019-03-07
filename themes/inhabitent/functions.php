@@ -103,3 +103,8 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Custom functions that act independently of the theme templates.
  */
+wp_register_script('custom-js',get_stylesheet_directory_uri().'/js/custom.js',array(),NULL,true);
+wp_enqueue_script('custom-js');
+
+$wnm_custom = array( 'stylesheet_directory_uri' => get_stylesheet_directory_uri() );
+wp_localize_script( 'custom-js', 'directory_uri', $wnm_custom );
