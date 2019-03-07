@@ -233,7 +233,7 @@ function inhabitent_posts_on_page( $query ) {
 	if(is_tax( 'product_type' )){
 		$query->set('orderby','title');
 		$query->set( 'posts_per_page', 16 );
-		$query->set( 'order','DESC');
+		$query->set( 'order','ASC');
         return;
 	}
 	
@@ -241,7 +241,7 @@ function inhabitent_posts_on_page( $query ) {
     if ( is_post_type_archive( 'product' )||is_tax('product_type') ) {
 		$query->set('orderby','title');
 		$query->set( 'posts_per_page', 16 );
-		$query->set( 'order','DESC');
+		$query->set( 'order','ASC');
         return;
     }
 }
