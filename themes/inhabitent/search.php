@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<section id="primary" class="journal-page-content search-content-area">
+<section id="primary" class="content-area journal-page-content search-content-area">
     <main id="main" class="journal-site-main search-site-main" role="main">
 
         <?php if (have_posts()) : ?>

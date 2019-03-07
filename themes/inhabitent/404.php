@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="journal-page-content none-content-area">
+	<div id="primary" class="content-area journal-page-content none-content-area">
 		<main id="main" class="journal-site-main site-main" role="main">
 
 			<section class="error-404 not-found">

@@ -1806,6 +1806,8 @@ input[type=submit] {
   .none-content-area a {
     color: #248A83;
     text-decoration: none; }
+  .none-content-area .search-field {
+    border: 1px solid #d6d6d6; }
 
 .archive-adventure {
   margin-top: 60px;
