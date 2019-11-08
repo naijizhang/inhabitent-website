@@ -2,7 +2,10 @@
   "name": "inhabitent",
   "version": "1.1.0",
   "description": "A WordPress theme for a multi-page website in RED Academy, forked from Underscores.",
-  "dependencies": {},
+  "dependencies": {
+    "js-yaml": "^3.13.1",
+    "lodash.template": "^4.5.0"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
