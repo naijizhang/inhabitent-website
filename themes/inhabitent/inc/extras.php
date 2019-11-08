@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Custom functions that act independently of the theme templates.
  *
@@ -11,22 +12,24 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function inhabitent_body_classes( $classes ) {
+function inhabitent_body_classes($classes)
+{
 	// Adds a class of group-blog to blogs with more than 1 published author.
-	if ( is_multi_author() ) {
+	if (is_multi_author()) {
 		$classes[] = 'group-blog';
 	}
 
 	return $classes;
 }
-add_filter( 'body_class', 'inhabitent_body_classes' );
+add_filter('body_class', 'inhabitent_body_classes');
 
 
 
 // custom login logo for theme
-function inhabitent_login_logo() {
-$logo_url = get_template_directory_uri().'/assets/images/logos/inhabitent-logo-text-dark.svg';
-echo "<style type='text/css'>
+function inhabitent_login_logo()
+{
+	$logo_url = get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-text-dark.svg';
+	echo "<style type='text/css'>
 	body.login h1 a {
 	background-image: url($logo_url); 
 	background-repeat: no-repeat;
@@ -42,7 +45,8 @@ echo "<style type='text/css'>
 add_action('login_head', 'inhabitent_login_logo');
 
 // custom login logo url to home page for theme
-function inhabitent_login_url(){
+function inhabitent_login_url()
+{
 	return get_site_url();
 }
-add_action('login_headerurl', 'inhabitent_login_url');
+add_filter('login_headerurl', 'inhabitent_login_url');
